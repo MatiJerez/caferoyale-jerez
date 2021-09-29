@@ -1,0 +1,330 @@
+/* Estilo general del sitio  */
+
+
+/* GENERAL */
+ul{
+    list-style: none;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #eeeeee ;
+  }
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:black;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+}
+h3 {
+    color:white ;
+
+}
+
+/*  FIN DEL GENERAL  */
+
+
+/* LOGOTIPO */
+
+.Logotipo img{
+    background-color: black;
+    width: 100px;
+    padding: 0vw;
+    margin: 0vw;
+    border: 0vw;
+}
+/* FIN LOGOTIPO  */
+
+
+/* BARRA DE NAVEGACION  */
+.Categoria {
+    margin-top: 15px;
+}
+.BarraDeNavegacion {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    top: 0px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+.BarraDeNavegacion a:hover {
+    background-color:rgb(27, 27, 27);
+    transform: scale(1.1);
+}
+.BarraDeNavegacion ul ul {
+     position: absolute;
+     display: none; 
+}
+.BarraDeNavegacion ul ul li { 
+    width: 100%;
+    
+}
+.BarraDeNavegacion ul li:hover ul {
+     display:block;
+     background-color: black;
+     
+} 
+.BarraDeNavegacion ul li:hover ul a:hover {
+    background-color: rgb(46, 46, 46)
+}
+
+.BarraDeNavegacion ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.BarraDeNavegacion a {
+    
+    background: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row ;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+}
+/* FIN BARRA DE NAVEGACION */
+
+
+/* BARRA DE BUSQUEDA */
+
+.BarraDeBusqueda {
+    margin-left: 0vw;
+    margin-top: 10px;
+    padding: 0; 
+}
+.Barrita {
+    background-image: linear-gradient(to left, white , black);
+    color: white;   
+    border-radius: 5px;
+}
+.BannerMain {
+    background-color: #eeeeee;
+}
+
+.BannerMain img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* FIN BARRA DE BUSQUEDA */
+
+
+
+/*video del index */
+.VideoMain {
+    width: 100%    !important;
+    height: auto   !important;
+}
+/* MAS RECOMENDADOS  */
+.MasRecomendados {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+.MasRecomendadosBotones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+/* FIN MAS RECOMENDADOS  */
+
+
+/* FOOTER */
+footer {
+    margin-top:50px;
+    width:100%;
+    height:100px;
+    background-color:black;
+}
+footer p {
+    color: white;
+    text-align: center;
+}
+
+.RedesSociales {
+    display: flex;
+    flex: row  ;
+    justify-content: space-around;
+    background-color: black;
+}
+/* FIN  FOOTER */
+
+
+
+/* CONTACTO */
+
+.DatosDeContacto {
+    display: flex;
+    justify-content: center;
+}
+/*FIN CONTACTO */
+
+/* SOBRE NOSOTROS */
+.SobreNosotrosGrid {
+    display: grid;
+    grid-template-areas: 
+    "SobreNosotrosTitulo  SobreNosotrosTitulo SobreNosotrosTitulo SobreNosotrosTitulo"
+    "SobreNosotrosImagen  SobreNosotrosTexto SobreNosotrosTexto ."
+    "SobreNosotrosImagen  . . ."
+    "SobreNosotrosImagen  SobreNosotrosImagen2 SobreNosotrosImagen2 ."
+    ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 0.5fr);
+}
+.SobreNosotrosImagen {
+    grid-area: SobreNosotrosImagen;
+
+}
+.SobreNosotrosImagen :hover {
+    transform: scale(1.1);
+    transition-duration: 1000ms;
+}
+.SobreNosotrosImagen2 :hover {
+    transform: scale(1.1);
+    transition-duration: 1000ms;
+}
+.SobreNosotrosImagen2 {
+    grid-area: SobreNosotrosImagen2;
+}
+.SobreNosotrosTitulo {
+    grid-area: SobreNosotrosTitulo;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.SobreNosotrosTexto {
+    grid-area: SobreNosotrosTexto;
+    font-size: 3vmin;
+}
+/* FIN SOBRE NOSOTROS */
+
+
+
+/* PRODUCTOS */
+
+.Productos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Carta  {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50px;
+    padding: 40px;
+    width: 20vw;
+    margin: 20px;
+    
+}
+.Productos :hover {
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+.AnadirAlCarrito {
+    border-radius: 20px;
+
+}
+.imgProducto {
+    width: 20vw;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+/* FIN PRODUCTOS   */
+
+
+
+/* RECOMENDADOS   */
+.Recomendaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 40px;
+
+}
+.Recomendaciones h1 {
+    text-transform: uppercase;
+}
+
+/* FIN DE RECOMENDADOS  */
+
+
+
+/* ============ MEDIA QUERIES ============ */
+
+/* MOBILE STYLE  */
+
+@media screen and (max-width: 768px) {
+    /*   NAV     */
+
+    .Logotipo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+
+    }
+    .BarraDeNavegacion {
+        display: flex;
+        flex-direction: column;
+    }
+    .Categoria {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .BarraDeBusqueda {
+        display: none;
+    }
+    /* fin nav*/
+
+    /* mas recomendados  */
+    .BannerMain {
+            display: none;
+        }
+    
+    /* PRODCUTOS */
+    .Productos {
+        display: flex ;
+        flex-direction: column;
+    }
+
+    /* sobre nosotros */
+    .SobreNosotrosGrid {
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .SobreNosotrosTexto {
+        margin: 20px;
+    }
+    .SobreNosotrosImagen2 {
+        display: none;
+    }
+  }
