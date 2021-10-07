@@ -41,58 +41,65 @@
     </header>
     <main>
        
-        <h2>Contacto</h2> 
+        <h1>Contacto</h1> 
              <!--formulario de contacto-->
-            <div class="container">
-                <div class="DatosDeContacto">
+               <div class="container">
                     <form action="" method="GET" enctype="">
-                        <label for="name">Nombre:</label><br>
-                        <input type="text" id="name" name="nombre" value=""><br>
-                        <label for="lname">Apellido:</label><br>
-                        <input type="text" id="lname" name="apellido" value=""><br><br>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" value=""><br><br>
-                        <!--Provincia del Interesado-->
-                        <div>
-                            <select name="provincia" id="provincia">                       
-                                <option value="Buenos Aires">Buenos Aires</option>
-                                <option value="Capital Federal">Capital Federal </option>
-                                <option value="Catamarca">Catamarca </option>
-                                <option value="Chaco"> Chaco</option>
-                                <option value="Chubut"> Chubut</option>
-                                <option value="Córdoba">Córdoba </option>
-                                <option value="Corrientes">Corrientes </option>
-                                <option value="Entre Ríos">Entre Ríos </option>
-                                <option value="Formosa">Formosa </option>
-                                <option value="Jujuy">Jujuy </option>
-                                <option value="La Pampa">La Pampa </option>
-                                <option value="La Rioja">La Rioja </option>
-                                <option value="Mendoza">Mendoza </option>
-                                <option value="Misiones">Misiones </option>
-                                <option value="Neuquén">Neuquén </option>
-                                <option value="Río Negro">Río Negro </option>
-                                <option value="Salta">Salta </option>
-                                <option value="San Juan">San Juan </option>
-                                <option value="San Luis"> San Luis</option>
-                                <option value="Santa Cruz">Santa Cruz </option>
-                                <option value="Santa Fe">Santa Fe </option>
-                                <option value="Santiago del Estero">Santiago del Estero </option>
-                                <option value="Tierra del Fuego"> Tierra del Fuego</option>
-                                <option value="Tucumán">Tucumán </option>
-                            </select>
+                        <div class="mb-3 form-group">
+                            <label for="name">Nombre:</label><br>
+                            <input class="form-control" type="text" id="name" name="nombre" value="">
                         </div>
-                        <!--Aceptar recibir info por mail-->
-                        <div>
-                            <h4>Quiero recibir informacion por Email</h4> 
+                        <div class="mb-3 form-group">
+                            <label for="lname">Apellido:</label><br>
+                            <input class="form-control" type="text" id="lname" name="apellido" value="">
                         </div>
-                        <input type="checkbox" name="acepta" value="1" />
-                        <!-- reset form-->
-                        <input type="reset" value="Borrar">
-                        <!--Enviar-->
-                        <input type="submit" value="Enviar">
-                    </form>   
-                </div>
-            </div> 
+                        <div class="mb-3 form-group">
+                            <label for="email">Email:</label><br>
+                            <input type="email" class="form-control" id="email" name="email" value="">
+                        </div>
+                            
+                            <!--Provincia del Interesado-->
+                            <div>
+                                <select class="form-select" name="provincia" id="provincia">                       
+                                    <option value="Buenos Aires">Buenos Aires</option>
+                                    <option value="Capital Federal">Capital Federal </option>
+                                    <option value="Catamarca">Catamarca </option>
+                                    <option value="Chaco"> Chaco</option>
+                                    <option value="Chubut"> Chubut</option>
+                                    <option value="Córdoba">Córdoba </option>
+                                    <option value="Corrientes">Corrientes </option>
+                                    <option value="Entre Ríos">Entre Ríos </option>
+                                    <option value="Formosa">Formosa </option>
+                                    <option value="Jujuy">Jujuy </option>
+                                    <option value="La Pampa">La Pampa </option>
+                                    <option value="La Rioja">La Rioja </option>
+                                    <option value="Mendoza">Mendoza </option>
+                                    <option value="Misiones">Misiones </option>
+                                    <option value="Neuquén">Neuquén </option>
+                                    <option value="Río Negro">Río Negro </option>
+                                    <option value="Salta">Salta </option>
+                                    <option value="San Juan">San Juan </option>
+                                    <option value="San Luis"> San Luis</option>
+                                    <option value="Santa Cruz">Santa Cruz </option>
+                                    <option value="Santa Fe">Santa Fe </option>
+                                    <option value="Santiago del Estero">Santiago del Estero </option>
+                                    <option value="Tierra del Fuego"> Tierra del Fuego</option>
+                                    <option value="Tucumán">Tucumán </option>
+                                </select>
+                            </div>
+                            <!--Aceptar recibir info por mail-->
+                            <div class="form-check mb-5 form-group">
+                                <input class="form-check-input" type="checkbox" >
+                                <label class="form-check-label"> Quiero recibir informacion por Email</label>
+                            </div>
+                            <div class="mb-3 form-group">
+                                <input type="submit" class="button btn btn-primary" title="Enviar" value="Enviar">
+                                <input type="reset" class="button btn btn-primary" title="Vaciar casilleros" value="Vaciar casilleros">    
+                            </div>
+                            
+                    </form>  
+                </div> 
+            
     </main>
 
 
