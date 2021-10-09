@@ -9,6 +9,7 @@
     <title>Cafe Royale</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/main.css">
@@ -16,33 +17,40 @@
 
 <!--LAS IMAGENES DE LOS PRODUCTOS AUN NO ESTAN ESPECIFICADAS POR ESO FIGURAN MAL LAS RUTAS  <img src="/images/.."...> -->
 <body>
-    
     <header>
-        <nav class="BarraDeNavegacion">
-            <!-- Logotipo -->
-            <div class="Logotipo">
-                <a href="index.html">
-                    <img src="./images/Logoblanco.png" alt="Logotipo" >
-                  </a>
+        
+        <!-- Logotipo -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img class="Logotipo" src="../images/Logoblanco.png" alt="Logotipo" >
+                    </a>
+                <form class="d-flex ms-5">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                </form>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav d-flex ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="./pages/Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/QuienesSomos.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Recomendaciones.html">Recomendaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-             <!--Barra De Navegacion Y Busqueda -->   
-            <ul class="Categoria">
-                <li><a href="./pages/Productos.html">Productos</a></li>
-                <li><a href="./pages/QuienesSomos.html">Sobre Nosotros</a> </li>
-                <li><a href="./pages/Recomendaciones.html">Recomendaciones</a> </li>
-                <li><a href="./pages/Contacto.html"> Contacto</a> </li>
-                <li><div class="BarraDeBusqueda">
-                        <form action="" method="POST" enctype="">
-                            <label for="BarraDeBusqueda"></label>
-                            <input class="Barrita" type="text" id="BarraDeBusqueda" name="BarraDeBusqueda" value="Buscar...">
-                        </form> 
-                   </div>
-                </li>
-            </ul>
-        </nav>
+          </nav>
           
     </header>
-
     <main>
         <!--Carrusel-->
         <section> 
@@ -91,7 +99,7 @@
         </div>
 
     </footer>
-   
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
