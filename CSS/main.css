@@ -43,7 +43,9 @@ h3 {
     border: 0vw;
 }
 /* FIN LOGOTIPO  */
-
+.UserIcon {
+    max-width: 15px;
+}
 
 /* BARRA DE NAVEGACION  */
 .Categoria {
@@ -240,7 +242,6 @@ footer p {
     color: #fff;
     border-radius: 50px;
     padding: 40px;
-    width: 20vw;
     margin: 20px;
     
 }
