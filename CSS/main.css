@@ -100,6 +100,9 @@ footer {
   justify-content: space-around;
   background-color: black; }
 
+.fa-cog {
+  color: grey; }
+
 /*video del index */
 .VideoMain {
   width: 100%    !important;
