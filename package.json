@@ -8,13 +8,12 @@
     "build-css": 
       "node-sass --include-path scss scss/main.scss css/pruebacss.css",
       "watch-css": "nodemon -e scss -x \"npm run build-css\""
-
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MatiJerez/caferoyale-jerez.git"
   },
-  "author": "",
+  "author": "Matias Jerez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MatiJerez/caferoyale-jerez/issues"
