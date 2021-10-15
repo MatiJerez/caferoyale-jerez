@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/normalize.css">
-    <link rel="stylesheet" href="./CSS/pruebacss.css">
+    <link rel="stylesheet" href="./CSS/main.css">
 </head>
 
 <!--LAS IMAGENES DE LOS PRODUCTOS AUN NO ESTAN ESPECIFICADAS POR ESO FIGURAN MAL LAS RUTAS  <img src="/images/.."...> -->
@@ -77,21 +77,22 @@
             </div>     
        </section>
             <h1 class="MasRecomendadostitulo">Mas Recomendados</h1>
-            <section class="Productos">
-                <div class="Carta">
-                    <img src="./images/productos/cafeterapng.png" alt="Cafetera" class="imgProducto">
-                    <input class="AnadirAlCarrito" type="button" value="Añadir al carrito">
-                </div>          
-                <div class="Carta">
-                    <img src="./images/productos/cafeterapng.png" alt="Cafetera" class="imgProducto">
-                    <input class="AnadirAlCarrito" type="button" value="Añadir al carrito">
-                </div>  
-                <div class="Carta">
-                    <img src="./images/productos/cafeterapng.png" alt="Cafetera" class="imgProducto">
-                    <input class="AnadirAlCarrito" type="button" value="Añadir al carrito">
-                </div>
-                
-            </section>
+            <div class="container-fluid">
+                <section class="Productos">
+                    <div class="Productos__carta">
+                        <img src="../images/productos/cafeterapng.png" alt="Cafetera" class="Productos__carta__img img-fluid">
+                        <input class="Productos__carta__button button btn btn-primary btn-dark" type="button" value="Añadir al carrito">
+                    </div>
+                    <div class="Productos__carta">
+                        <img src="../images/productos/cafeterapng.png" alt="Cafetera" class="Productos__carta__img img-fluid">
+                        <input class="Productos__carta__button button btn btn-primary btn-dark" type="button" value="Añadir al carrito">
+                    </div>
+                    <div class="Productos__carta">
+                        <img src="../images/productos/cafeterapng.png" alt="Cafetera" class="Productos__carta__img img-fluid"> img-fluid
+                        <input class="Productos__carta__button button btn btn-primary btn-dark" type="button" value="Añadir al carrito">
+                    </div>
+                </section>
+            </div>
        </section>
     </main>
     <!-- Sección inferior con redes y logotipo  -->

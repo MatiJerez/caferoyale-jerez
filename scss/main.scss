@@ -67,7 +67,6 @@
     margin-top: 20px;
     text-transform: uppercase;
 }
-
 .SobreNosotrosTexto {
     grid-area: SobreNosotrosTexto;
     font-size: 3vmin;
@@ -81,10 +80,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-        :hover {
-            transform: scale(1.1);
-            transition-duration: 500ms;
-        }
+    :hover {
+        transform: scale(1.1);
+        transition-duration: 500ms;
+    }        
 }
 .Carta  {
     display: flex;
@@ -94,18 +93,40 @@
     color: #fff;
     border-radius: 50px;
     padding: 40px;
-    margin: 20px;
-    
+    margin: 20px;   
 }
 .AnadirAlCarrito {
     border-radius: 20px;
-
 }
 .imgProducto {
     width: 20vw;
     border-radius: 10px;
     background-color: transparent;
+    :hover {
+        transform: scale(1.1);
+        transition-duration: 500ms;
+    }
 }
+/*metodologia BEM*/
+.Productos__carta{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50px;
+    padding: 40px;
+    margin: 20px;
+    width: 18rem;
+}
+.Productos__carta__button {
+    border-radius: 20px;
+}
+.Productos__carta__img {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
 /* FIN PRODUCTOS   */
 /* RECOMENDADOS   */
 .Recomendaciones {
@@ -164,7 +185,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
     .SobreNosotrosTexto {
         margin: 20px;
