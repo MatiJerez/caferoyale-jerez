@@ -190,15 +190,26 @@ footer {
 
 /* FIN PRODUCTOS   */
 /* RECOMENDADOS   */
-.Recomendaciones {
+.recomendaciones {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-right: 40px;
   margin-left: 40px; }
-  .Recomendaciones h1 {
-    text-transform: uppercase; }
+
+.recomendaciones__titulo {
+  text-transform: uppercase; }
+
+.recomendaciones__subtitulo {
+  color: black; }
+
+.recomendaciones__img {
+  justify-content: center;
+  align-items: center; }
+
+.recomendaciones__p {
+  color: black; }
 
 /* FIN DE RECOMENDADOS  */
 @media screen and (max-width: 768px) {
