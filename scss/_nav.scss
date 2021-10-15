@@ -1,0 +1,41 @@
+.Logotipo {
+    width: 100px;
+    .img{
+        background-color: $main-color;
+        width: 100px;
+        padding: 0vw;
+        margin: 0vw;
+        border: 0vw;
+    }
+}
+.UserIcon {
+    max-width: 15px;
+}
+.Categoria {
+    margin-top: 15px;
+}
+.BarraDeNavegacion {
+    background-color: $main-color;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    top: 0px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+        a:hover {
+            background-color:rgb(27, 27, 27);
+            transform: scale(1.1);
+        }
+        ul ul {
+            position: absolute;
+            display: none; 
+            li { 
+                width: 100%;
+            }
+        }
+}

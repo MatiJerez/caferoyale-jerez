@@ -1,0 +1,175 @@
+ @import "variables";
+ @import "general";
+ @import "nav";
+ @import "footer";
+
+/*video del index */
+.VideoMain {
+    width: 100%    !important;
+    height: auto   !important;
+}
+.BannerMain {
+    background-color: #eeeeee;
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+}
+/* MAS RECOMENDADOS  */
+.MasRecomendados {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+.MasRecomendadosBotones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+/* FIN MAS RECOMENDADOS  */
+.DatosDeContacto {
+    display: flex;
+    justify-content: center;
+}
+/*FIN CONTACTO */
+
+/* SOBRE NOSOTROS */
+.SobreNosotrosGrid {
+    display: grid;
+    grid-template-areas: 
+    "SobreNosotrosTitulo  SobreNosotrosTitulo SobreNosotrosTitulo SobreNosotrosTitulo"
+    "SobreNosotrosImagen  SobreNosotrosTexto SobreNosotrosTexto ."
+    "SobreNosotrosImagen  . . ."
+    "SobreNosotrosImagen  SobreNosotrosImagen2 SobreNosotrosImagen2 ."
+    ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 0.5fr);
+}
+.SobreNosotrosImagen {
+    grid-area: SobreNosotrosImagen;
+        :hover {
+            transform: scale(1.1);
+            transition-duration: 1000ms;
+        }
+}
+.SobreNosotrosImagen2 {
+    grid-area: SobreNosotrosImagen2;
+        :hover {
+            transform: scale(1.1);
+            transition-duration: 1000ms;
+        }
+}
+.SobreNosotrosTitulo {
+    grid-area: SobreNosotrosTitulo;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.SobreNosotrosTexto {
+    grid-area: SobreNosotrosTexto;
+    font-size: 3vmin;
+}
+/* FIN SOBRE NOSOTROS */
+
+/* PRODUCTOS */
+
+.Productos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+        :hover {
+            transform: scale(1.1);
+            transition-duration: 500ms;
+        }
+}
+.Carta  {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50px;
+    padding: 40px;
+    margin: 20px;
+    
+}
+.AnadirAlCarrito {
+    border-radius: 20px;
+
+}
+.imgProducto {
+    width: 20vw;
+    border-radius: 10px;
+    background-color: transparent;
+}
+/* FIN PRODUCTOS   */
+/* RECOMENDADOS   */
+.Recomendaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 40px;
+        h1 {
+            text-transform: uppercase;
+        }
+}
+/* FIN DE RECOMENDADOS  */
+@media screen and (max-width: 768px) {
+    /*   NAV     */
+
+    .Logotipo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+
+    }
+    .BarraDeNavegacion {
+        display: flex;
+        flex-direction: column;
+    }
+    .Categoria {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .BarraDeBusqueda {
+        display: none;
+    }
+    /* fin nav*/
+
+    /* mas recomendados  */
+    .BannerMain {
+            display: none;
+        }
+    
+    /* PRODCUTOS */
+    .Productos {
+        display: flex ;
+        flex-direction: column;
+    }
+
+    /* sobre nosotros */
+    .SobreNosotrosGrid {
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .SobreNosotrosTexto {
+        margin: 20px;
+    }
+    .SobreNosotrosImagen2 {
+        display: none;
+    }
+  }

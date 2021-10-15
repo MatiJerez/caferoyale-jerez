@@ -1,0 +1,22 @@
+/* FOOTER */
+footer {
+    width:100%;
+    height:100px;
+    background-color: $main-color;
+        p {
+            color: white;
+            text-align: center;
+        }
+}
+.FooterContainer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+}
+.RedesSociales {
+    display: flex;
+    flex: row  ;
+    justify-content: space-around;
+    background-color: $main-color;
+}
