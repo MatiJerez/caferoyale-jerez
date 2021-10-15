@@ -80,10 +80,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    :hover {
-        transform: scale(1.1);
-        transition-duration: 500ms;
-    }        
+     
 }
 .Carta  {
     display: flex;
@@ -118,11 +115,21 @@
     padding: 40px;
     margin: 20px;
     width: 18rem;
+    :hover {
+        transform: scale(1.1);
+        transition-duration: 500ms;
+    }
 }
 .Productos__carta__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 20px;
 }
 .Productos__carta__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     background-color: transparent;
 }
