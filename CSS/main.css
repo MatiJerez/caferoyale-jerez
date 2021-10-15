@@ -30,6 +30,27 @@ h3 {
     margin: 0vw;
     border: 0vw; }
 
+.box {
+  width: 200px;
+  height: 50px;
+  background-color: #212529;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 20px; }
+  .box :hover {
+    background-color: #1C1F23; }
+  .box i {
+    font-size: 20px;
+    color: #777; }
+  .box input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-left: 10px; }
+
 .UserIcon {
   max-width: 15px; }
 
