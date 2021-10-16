@@ -136,7 +136,10 @@ footer {
 /* SOBRE NOSOTROS */
 .SobreNosotrosGrid {
   display: grid;
-  grid-template-areas: "SobreNosotrosTitulo  SobreNosotrosTitulo SobreNosotrosTitulo SobreNosotrosTitulo" "SobreNosotrosImagen  SobreNosotrosTexto SobreNosotrosTexto ." "SobreNosotrosImagen  . . ." "SobreNosotrosImagen  SobreNosotrosImagen2 SobreNosotrosImagen2 .";
+  grid-template-areas: "SobreNosotrosTitulo  SobreNosotrosTitulo SobreNosotrosTitulo SobreNosotrosTitulo"
+ "SobreNosotrosImagen  SobreNosotrosTexto SobreNosotrosTexto ."
+ "SobreNosotrosImagen  . . ."
+ "SobreNosotrosImagen  SobreNosotrosImagen2 SobreNosotrosImagen2 .";
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 0.5fr); }
 
@@ -228,17 +231,24 @@ footer {
   margin-right: 40px;
   margin-left: 40px; }
 
+.recomendaciones__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  margin: 50px; }
+
 .recomendaciones__titulo {
   text-transform: uppercase; }
 
-.recomendaciones__subtitulo {
+.recomendaciones__container__subtitulo {
   color: black; }
 
-.recomendaciones__img {
+.recomendaciones__container__img {
   justify-content: center;
   align-items: center; }
 
-.recomendaciones__p {
+.recomendaciones__container__p {
   color: black; }
 
 /* FIN DE RECOMENDADOS  */
