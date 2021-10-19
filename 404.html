@@ -4,18 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Page not found</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/main.css">
 </head>
 <body>
     <header>
-
+        
+        <!-- Logotipo -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="Logotipo" src="./images/Logoblanco.png" alt="Logotipo" >
+                    </a>
+                <div class="box ms-5">
+                    <input class="form-control me-2 btn-dark" type="text" placeholder="Search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav d-flex ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="./pages/Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/QuienesSomos.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Recomendaciones.html">Recomendaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/Contacto.html">Contacto</a>
+                        </li>
+                        <li class="btn-group dropstart">
+                            <button type="button" class="btn bg-black dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="UserIcon" src="./images/usericon.png" alt="user icon">
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Iniciar</a></li>
+                              <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+          
     </header>
     <main>
         <img class="404" src="./images/404error.png" alt="Error 404">  
         <h1>Error 404 pagina no encontrada</h1>
     </main>
-    
+    <footer class="footer mt-auto py-3 bg-black position-absolute top-100 start-50 translate-middle">
+        <div class="footer__cotainer container d-flex">
+            <span class="footer__cotainer__text text-muted">© 2021 Matias Jerez derechos de autor</span>
+            <!--social media -->
+            <ul class="footer__container__redes position-absolute bottom-0 end-0 px-5 ">
+                <li>
+                    <a href="https://github.com/MatiJerez">
+                    <i class="footer__cotainer__icon fa fa-github fa-cog" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/matias-jerez-4b8276196/">
+                    <i class="footer__cotainer__icon fa fa-linkedin-square fa-cog" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
