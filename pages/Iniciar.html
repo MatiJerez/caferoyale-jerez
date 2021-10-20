@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recomendaciones</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="..//CSS/bootstrap.min.css">
@@ -59,49 +59,41 @@
           
     </header>
     <main>
-        <section class="recomendaciones"> 
-             <h1 class="recomendaciones__titulo">Tips para hacer el mejor Cafe</h1>
-                <div class="recomendaciones__container container">
-                    <h2 class="recomendaciones__container__subtitulo">Comprar granos Royale</h2>
-                        <img class="recomendaciones__container__img" src="#" alt="granos cafe">
-                        <p class="recomendaciones__container__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Laudantium repudiandae sapiente voluptatum excepturi 
-                            expedita omnis deserunt reprehenderit quibusdam quia 
-                            earum, ad quo ipsa. Dignissimos sit, animi voluptatibus
-                            consequatur reiciendis minus.
-                        </p>
+        <h1 class="tittle">Iniciar Sesión</h1>
+        <section class="iniciarSesion container">
+            <form action="">
+                <div class="mb-3 mt-5">
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Email">
                 </div>
-                <div class="recomendaciones__container container">
-                    <h2 class="recomendaciones__container__subtitulo">Utilizar agua fresca</h2>
-                        <img class="recomendaciones__container__img" src="#" alt="agua fresca">
-                        <p class="recomendaciones__container__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Laudantium repudiandae sapiente voluptatum excepturi 
-                            expedita omnis deserunt reprehenderit quibusdam quia 
-                            earum, ad quo ipsa. Dignissimos sit, animi voluptatibus
-                            consequatur reiciendis minus.
-                        </p>
+                <div class="mb-3">
+                    <input class="form-control" type="password" id="password" name="password" placeholder="Contraseña">
                 </div>
-                <div class="recomendaciones__container container">
-                    <h2 class="recomendaciones__container__subtitulo">Tener cuidado con la temperatura</h2>
-                        <img class="recomendaciones__container__img" src="#" alt="temperatura">
-                        <p class="recomendaciones__container__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Laudantium repudiandae sapiente voluptatum excepturi 
-                            expedita omnis deserunt reprehenderit quibusdam quia 
-                            earum, ad quo ipsa. Dignissimos sit, animi voluptatibus
-                            consequatur reiciendis minus.
-                        </p>
+                <div class="mb-3">
+                    <input type="submit" class="iniciarSesion__button btn btn-primary btn-dark" title="Enviar" value="Iniciar">
                 </div>
-            <img class="recomendaciones__img" src="../images/productos/coffeebag.jpg" alt="bolsa de cafe">
-                
-        </section>
+                <!--Aceptar recibir info por mail-->
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" >
+                    <label class="form-check-label"> Recordar Contraseña</label>
+                </div>
+                <div>
+                    <a href="">
+                        <p>¿No recuerdas tu contraseña?</p>
+                    </a>
+                    <a href="./Registrarse.html">
+                        <p>¿No tienes cuenta?</p>
+                    </a>
+                </div>
+            </form>
 
+        </section>
     </main>
     
-    <footer class="footer mt-auto py-3 bg-black start-50 ">
+    <footer class="footer mt-auto py-3 bg-black position-absolute top-100 start-50 translate-middle">
         <div class="footer__cotainer container d-flex">
             <span class="footer__cotainer__text text-muted">© 2021 Matias Jerez derechos de autor</span>
             <!--social media -->
-            <ul class="footer__container__redes  bottom-0 end-0 px-5 ">
+            <ul class="footer__container__redes bottom-0 end-0 px-5 ">
                 <li>
                     <a href="https://github.com/MatiJerez">
                     <i class="footer__cotainer__icon fa fa-github fa-cog" aria-hidden="true"></i>
@@ -115,7 +107,7 @@
             </ul>
         </div>
     </footer>
-    
+
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

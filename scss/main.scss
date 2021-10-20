@@ -217,3 +217,20 @@
         display: none;
     }
   }
+  /* INICIAR */
+.iniciarSesion {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 20px;
+    a {
+        color: black;
+        text-decoration: none;
+        :hover {
+            color: grey;
+            transition-duration: 500ms;
+        }
+    }
+}
+.tittle {
+    margin-top: 50px;
+}
