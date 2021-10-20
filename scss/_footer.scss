@@ -8,7 +8,17 @@ footer {
             text-align: center;
         }
 }
-
+.footer__cotainer {
+    display: flex;
+    flex-direction: column;
+}
+.footer__container__redes {
+    display: flex;
+    justify-content: right;
+    li {
+        padding: 0px 10px;
+    }
+}
 .fa-cog {
     color: grey;
   }
