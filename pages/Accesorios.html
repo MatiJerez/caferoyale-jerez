@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Productos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="..//CSS/bootstrap.min.css">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../CSS/normalize.css">
     <link rel="stylesheet" href="../CSS/main.css"> 
 </head>
+
 <body>
     <header>
         
@@ -48,8 +49,8 @@
                                 <img class="UserIcon" src="../images/usericon.png" alt="user icon">
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="./Iniciar.html">Iniciar</a></li>
-                              <li><a class="dropdown-item" href="./Registrarse.html">Registrarse</a></li>
+                                <li><a class="dropdown-item" href="./Iniciar.html">Iniciar</a></li>
+                                <li><a class="dropdown-item" href="./Registrarse.html">Registrarse</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -58,43 +59,44 @@
           </nav>
           
     </header>
+    
     <main>
-        <h1 class="tittle">Registrarse</h1>
-        <section class="iniciarSesion container">
-            <form action="">
-                <div class="mb-3 mt-5">
-                    <input class="form-control" type="email" id="email" name="email" placeholder="Email">
+        <div class="filtroMenu bg-black">
+            <nav class="nav flex-column">
+                <ul>
+                    <li class="nav-item">
+                        <a href="./NuestroCafe.html">Nuestro Café</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./MaquinasDeCafe.html">Maquinas de Café</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Acompanamentos.html">Acompañamientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Accesorios.html">Accesorios</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container-fluid">
+            <section class="Productos">
+                <div class="Productos__carta">
+                    <img src="../images/productos/155647-300-300-removebg-preview.png" alt="vaso termico" class="Productos__carta__img">
+                    <input class="Productos__carta__button button btn btn-primary btn-dark" type="button" value="Añadir al carrito">
                 </div>
-                <div class="mb-3">
-                    <input class="form-control" type="password" id="password" name="password" placeholder="Contraseña">
-                </div>
-                <div class="mb-3">
-                    <input class="form-control" type="password" id="password" name="password" placeholder="Confirmar contraseña">
-                </div>
-                <div class="mb-3">
-                    <input type="submit" class="iniciarSesion__button btn btn-primary btn-dark" title="Enviar" value="Registrarse">
-                </div>
-                <!--Aceptar recibir info por mail-->
-                <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" >
-                    <label class="form-check-label"> Recordar Contraseña</label>
-                </div>
-                <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox" >
-                    <label class="form-check-label">Recibir información por correo</label>
-                </div>
-                
-                
-            </form>
-
-        </section>
+            </section>
+        </div>
     </main>
     
-    <footer class="footer mt-auto py-3 bg-black position-absolute top-100 start-50 translate-middle">
+
+    <!-- Sección inferior con redes y logotipo  -->
+
+    <footer class="footer mt-auto py-3 bg-black start-50 ">
         <div class="footer__cotainer container d-flex">
             <span class="footer__cotainer__text text-muted">© 2021 Matias Jerez derechos de autor</span>
             <!--social media -->
-            <ul class="footer__container__redes bottom-0 end-0 px-5 ">
+            <ul class="footer__container__redes  bottom-0 end-0 px-5 ">
                 <li>
                     <a href="https://github.com/MatiJerez">
                     <i class="footer__cotainer__icon fa fa-github fa-cog" aria-hidden="true"></i>
@@ -108,7 +110,10 @@
             </ul>
         </div>
     </footer>
-
+    
     <script src="../js/bootstrap.bundle.min.js"></script>
+    
 </body>
+
+
 </html>
