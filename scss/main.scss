@@ -40,12 +40,12 @@
 .SobreNosotrosGrid {
     display: grid;
     grid-template-areas: 
-    "SobreNosotrosTitulo  SobreNosotrosTitulo SobreNosotrosTitulo SobreNosotrosTitulo"
-    "SobreNosotrosImagen  SobreNosotrosTexto SobreNosotrosTexto ."
-    "SobreNosotrosImagen  . . ."
-    "SobreNosotrosImagen  SobreNosotrosImagen2 SobreNosotrosImagen2 ."
+    ". SobreNosotrosTitulo  SobreNosotrosTitulo SobreNosotrosTitulo SobreNosotrosTitulo ."
+    ". SobreNosotrosImagen  SobreNosotrosTexto SobreNosotrosTexto SobreNosotrosImagen3 ."
+    ". SobreNosotrosImagen . . SobreNosotrosImagen3 ."
+    ". .  SobreNosotrosImagen2 SobreNosotrosImagen2 . ."
     ;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 0.5fr);
 }
 .SobreNosotrosImagen {
@@ -57,6 +57,13 @@
 }
 .SobreNosotrosImagen2 {
     grid-area: SobreNosotrosImagen2;
+        :hover {
+            transform: scale(1.1);
+            transition-duration: 1000ms;
+        }
+}
+.SobreNosotrosImagen3 {
+    grid-area: SobreNosotrosImagen3;
         :hover {
             transform: scale(1.1);
             transition-duration: 1000ms;
@@ -284,7 +291,7 @@ border-radius: 20px;
     .SobreNosotrosTexto {
         margin: 20px;
     }
-    .SobreNosotrosImagen2 {
+    .SobreNosotrosImagen3 {
         display: none;
     }
   }
