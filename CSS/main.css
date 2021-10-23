@@ -248,7 +248,7 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  margin: 50px; }
+  display: block; }
 
 .recomendaciones__titulo {
   text-transform: uppercase; }
